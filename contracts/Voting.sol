@@ -13,7 +13,7 @@ contract Voting {
         Choice[] choices;
         uint end; // end timestamp of ballot
     }
-    mapping(uint => Ballot) ballots;
+    mapping(uint => Ballot) public ballots;
     uint nextBallotId;
     address public admin;
     mapping(address => mapping(uint => bool)) votes; // nested mapping to keep track of who has already voted for what
@@ -39,6 +39,8 @@ contract Voting {
             for (uint i = 0; i < _choices.length; i++) {
                 ballots[nextBallotId].choices.push(Choice(i, _choices[i], 0));
             }
+
+            nextBallotId++;
         
         }
         
