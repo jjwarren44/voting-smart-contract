@@ -1,0 +1,26 @@
+{
+  "name": "voting",
+  "version": "1.0.0",
+  "description": "A smart contract built with Solidity that allows for ballots to be created and voters to vote on the different choices in a ballot.",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jjwarren44/voting-smart-contract.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jjwarren44/voting-smart-contract/issues"
+  },
+  "homepage": "https://github.com/jjwarren44/voting-smart-contract#readme",
+  "dependencies": {
+    "@openzeppelin/test-helpers": "^0.5.15"
+  }
+}
