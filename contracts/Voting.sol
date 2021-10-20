@@ -14,9 +14,9 @@ contract Voting {
         uint end; // end timestamp of ballot
     }
     mapping(uint => Ballot) public ballots;
-    uint nextBallotId;
+    uint public nextBallotId;
     address public admin;
-    mapping(address => mapping(uint => bool)) votes; // nested mapping to keep track of who has already voted for what
+    mapping(address => mapping(uint => bool)) public votes; // nested mapping to keep track of who has already voted for what
     
     constructor() {
         admin = msg.sender;
